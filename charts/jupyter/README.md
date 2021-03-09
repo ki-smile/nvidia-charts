@@ -6,7 +6,7 @@ As standard create a disk with x"100Gi" mounted in /data and using one nvidia GP
 ## TL;DR
 
 ```console
-helm repo add nvidia-charts https://sennerholm.github.io/nvidia-charts
+helm repo add nvidia-charts https://ki-smile.github.io/nvidia-charts
 helm repo update
 helm install jupyter nvidia-charts/jupyter
 ```
@@ -16,7 +16,7 @@ helm install jupyter nvidia-charts/jupyter
 Before we can install charts from a repo we need to add it and fetch the information:
 
 ```console
-helm repo add nvidia-charts https://sennerholm.github.io/nvidia-charts
+helm repo add nvidia-charts https://ki-smile.github.io/nvidia-charts
 helm repo update
 ```
 
