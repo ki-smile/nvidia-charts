@@ -5,7 +5,7 @@ Mathworks Matlab chart to be used on DGX, as standard create a disk with "100Gi"
 ## TL;DR
 
 ```console
-helm repo add nvidia-charts https://sennerholm.github.io/nvidia-charts
+helm repo add nvidia-charts https://ki-smile.github.io/nvidia-charts
 helm repo update
 helm install matlab nvidia-charts/matlab
 ```
@@ -15,7 +15,7 @@ helm install matlab nvidia-charts/matlab
 Before we can install charts from a repo we need to add it and fetch the information:
 
 ```console
-helm repo add nvidia-charts https://sennerholm.github.io/nvidia-charts
+helm repo add nvidia-charts https://ki-smile.github.io/nvidia-charts
 helm repo update
 ```
 
