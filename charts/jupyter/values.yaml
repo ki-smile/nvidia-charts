@@ -37,6 +37,10 @@ initContainers:
 command: ["/opt/conda/bin/python"]
 args: ["/opt/conda/bin/jupyter-notebook"]
 
+# Disable service links env Variables, the code is not working if you do a release named jupyter
+enableServiceLinks: false
+
+
 # Disable the liveness probe
 probes:
   liveness:
