@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: r2020b
 description: Mathworks Matlab chart
 name: matlab
-version: 0.0.5
+version: 0.0.6
 kubeVersion: ">=1.16.0-0"
 home: https://github.com/sennerholm/nvidia-charts/charts/tree/master/charts/matlab
 maintainers:
@@ -10,5 +10,5 @@ maintainers:
   email: mikael@sennerholm.net
 dependencies:
 - name: common
-  repository: https://k8s-at-home.com/charts/
-  version: 3.0.1
+  version: 1.0.0
+  repository: https://library-charts.k8s-at-home.com

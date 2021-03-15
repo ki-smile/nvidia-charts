@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 20.12-py3
 description: Jupyter Notebook with PyTorch chart
 name: jupyter
-version: 0.0.3
+version: 0.0.4
 kubeVersion: ">=1.16.0-0"
 home: https://github.com/sennerholm/nvidia-charts/charts/tree/master/charts/pytorch
 maintainers:
@@ -10,5 +10,5 @@ maintainers:
   email: mikael@sennerholm.net
 dependencies:
 - name: common
-  repository: https://k8s-at-home.com/charts/
-  version: 3.0.1
+  version: 1.0.0
+  repository: https://library-charts.k8s-at-home.com
