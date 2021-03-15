@@ -2,10 +2,10 @@ To reach the matlab container do a port-forward to expose the port on your compu
 
   kubectl port-forward service/{{ include "common.names.fullname" . }} 8888:8888
 
-Check the logs of pod for a line like "http://hostname:8888/?token=e98c3539b933892643a90491340856edrandomsecret"
-and connect your webbrowser to
+Check the logs of pod for an url like "http://hostname:8888/?token=examplerandomsecret"
 
-http://localhost:8888/?token=e98c3539b933892643a90491340856edrandomsecret
+Replace "http://hostname:8888" with "http://localhost:8888" in the url and connect your webbrowser to it.
+
 
 When you are done for today remove the pod and the usage of the GPU with:
 
