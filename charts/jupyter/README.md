@@ -51,7 +51,7 @@ kubectl scale deployment rel-jupyter --replicas=1
 To uninstall the `rel-jupyter` release/deployment and remove all resources (including the data)
 
 ```console
-helm uninstall alertmanager-bot
+helm uninstall rel-jupyter
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
