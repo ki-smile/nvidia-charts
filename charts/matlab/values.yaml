@@ -24,10 +24,19 @@ persistence:
     size: 100Gi
     emptyDir: false
     mountPath: /data
+  shm:
+    enabled: true
+    emptyDir:
+      enabled: true
+      medium: "Memory"
+    mountPath: /dev/shm
+
 
 # Set command to wait in the background
 command: ["/bin/bash"]
-args: ['"-c","/bin/run.sh; tail -n1 -f /bin/run.sh"']
+args:
+ - "-c"
+ - "/bin/run.sh; tail -n1 -f /bin/run.sh"
 
 # Disable the liveness probe
 probes:
