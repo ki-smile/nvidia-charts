@@ -3,6 +3,24 @@ entries:
   jupyter:
   - apiVersion: v2
     appVersion: 20.12-py3
+    created: "2021-03-30T12:27:03.537404092Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 2.1.0
+    description: Jupyter Notebook with PyTorch chart
+    digest: 2538290c2697f24233ea2d51f8ad47ac8661edc0a8ed2aa505f9c30b277ec246
+    home: https://github.com/sennerholm/nvidia-charts/charts/tree/master/charts/pytorch
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mikael@sennerholm.net
+      name: Mikael Sennerholm
+    name: jupyter
+    urls:
+    - https://github.com/ki-smile/nvidia-charts/releases/download/jupyter-0.0.5/jupyter-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 20.12-py3
     created: "2021-03-16T07:10:15.300376719Z"
     dependencies:
     - name: common
@@ -56,6 +74,24 @@ entries:
     - https://github.com/sennerholm/nvidia-charts/releases/download/jupyter-0.0.2/jupyter-0.0.2.tgz
     version: 0.0.2
   matlab:
+  - apiVersion: v2
+    appVersion: r2020b
+    created: "2021-03-30T12:27:03.710347965Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 2.1.0
+    description: Mathworks Matlab chart
+    digest: 09df51ffd1bf7c11267b9538bc9086f11ab997b396348004e1dd14d0f2e94e7c
+    home: https://github.com/sennerholm/nvidia-charts/charts/tree/master/charts/matlab
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mikael@sennerholm.net
+      name: Mikael Sennerholm
+    name: matlab
+    urls:
+    - https://github.com/ki-smile/nvidia-charts/releases/download/matlab-0.0.7/matlab-0.0.7.tgz
+    version: 0.0.7
   - apiVersion: v2
     appVersion: r2020b
     created: "2021-03-16T07:10:15.441412957Z"
@@ -146,4 +182,4 @@ entries:
     urls:
     - https://github.com/sennerholm/nvidia-charts/releases/download/matlab-0.0.2/matlab-0.0.2.tgz
     version: 0.0.2
-generated: "2021-03-16T07:10:15.441537565Z"
+generated: "2021-03-30T12:27:03.710385868Z"
