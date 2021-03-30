@@ -1,4 +1,4 @@
-To reach the matlab container do a port-forward to expose the port on your computer
+To reach the jupyter container do a port-forward to expose the port on your computer
 
   kubectl port-forward service/{{ include "common.names.fullname" . }} 8888:8888
 

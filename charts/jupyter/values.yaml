@@ -24,6 +24,12 @@ persistence:
     size: 100Gi
     emptyDir: false
     mountPath: /workspace
+  shm:
+    enabled: true
+    emptyDir:
+      enabled: true
+      medium: "Memory"
+    mountPath: /dev/shm    
 
 # initContainer to try to copy what's in the image by default in /workspace to the storage if it's not there
 initContainers:
