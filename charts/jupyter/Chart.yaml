@@ -10,5 +10,5 @@ maintainers:
   email: mikael@sennerholm.net
 dependencies:
 - name: common
-  version: 2.5.0
+  version: 4.5.2
   repository: https://library-charts.k8s-at-home.com
