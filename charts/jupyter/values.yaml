@@ -40,8 +40,7 @@ initContainers:
   - mountPath: /data
     name: data
 # Set command to wait in the background
-command: ["/opt/conda/bin/python"]
-args: ["/opt/conda/bin/jupyter-notebook"]
+command: ["/usr/local/bin/jupyter-notebook"]
 
 # Disable service links env Variables, the code is not working if you do a release named jupyter
 enableServiceLinks: false
