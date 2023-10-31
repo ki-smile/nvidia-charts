@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   jupyter:
   - apiVersion: v2
+    appVersion: 23.10-py3
+    created: "2023-10-31T19:44:23.160548354Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Jupyter Notebook with PyTorch chart
+    digest: 10f7fab67780cec3f7446717b812b6f11f90c9046e99362e2175544bc669d124
+    home: https://github.com/sennerholm/nvidia-charts/charts/tree/master/charts/pytorch
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mikael@sennerholm.net
+      name: Mikael Sennerholm
+    name: jupyter
+    urls:
+    - https://github.com/ki-smile/nvidia-charts/releases/download/jupyter-0.0.7/jupyter-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
     appVersion: 20.12-py3
     created: "2023-10-24T18:56:14.092555715Z"
     dependencies:
@@ -218,4 +236,4 @@ entries:
     urls:
     - https://github.com/sennerholm/nvidia-charts/releases/download/matlab-0.0.2/matlab-0.0.2.tgz
     version: 0.0.2
-generated: "2023-10-24T18:56:14.245644786Z"
+generated: "2023-10-31T19:44:23.160587257Z"
