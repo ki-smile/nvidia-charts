@@ -34,7 +34,7 @@ persistence:
 # initContainer to try to copy what's in the image by default in /workspace to the storage if it's not there
 initContainers:
 - name: copy-workspace
-  image: nvcr.io/nvidia/pytorch:23.09-py3
+  image: nvcr.io/nvidia/pytorch:23.10-py3
   command: [ 'sh', '-c', 'if [ ! -f /data/README.md ]; then cp -a /workspace/* /data/ ; fi; ls -l /data' ]
   volumeMounts:
   - mountPath: /data
