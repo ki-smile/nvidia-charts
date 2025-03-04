@@ -593,7 +593,8 @@ For issues not covered in this troubleshooting guide, please contact your system
 
 The following diagram illustrates the relationships between different components of the Kubernetes ecosystem and the tools used to interact with it:
 
-![Kubernetes Ecosystem and Relationships](./k8s-ecosystem-diagram.svg)
+![Kubernetes Ecosystem and Relationships](https://raw.githubusercontent.com/ki-smile/nvidia-charts/main/path/to/k8s-ecosystem-diagram.svg)
+
 
 ### Key Relationships Explained
 
