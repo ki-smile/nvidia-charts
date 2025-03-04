@@ -184,6 +184,3 @@ kubectl scale deployment rel-jupyter --replicas=0
 ```sh
 kubectl scale deployment rel-jupyter --replicas=1
 ```
-
-## 8. Summary
-By following this guide, you can efficiently deploy and manage Jupyter Notebook instances on Kubernetes clusters powered by NVIDIA GPUs. The guide provides flexibility to either use prebuilt images or create custom ones as needed.
