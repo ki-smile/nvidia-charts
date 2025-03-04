@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Kubernetes Ecosystem and Relationships</text>
+  
+  <!-- Kubernetes Cluster Box -->
+  <rect x="50" y="70" width="700" height="480" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" rx="10" ry="10" fill-opacity="0.3"/>
+  <text x="400" y="90" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Kubernetes Cluster</text>
+  
+  <!-- Node Boxes -->
+  <rect x="100" y="110" width="600" height="150" fill="#f0f5ff" stroke="#597ef7" stroke-width="2" rx="8" ry="8"/>
+  <text x="150" y="130" font-family="Arial" font-size="16" font-weight="bold">Node (Worker)</text>
+  
+  <!-- Pods within Node -->
+  <rect x="120" y="140" width="160" height="100" fill="#fff" stroke="#1890ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="160" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Pod</text>
+  
+  <!-- Container within Pod -->
+  <rect x="130" y="170" width="140" height="60" fill="#e6fffb" stroke="#13c2c2" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="190" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Container</text>
+  <text x="200" y="210" font-family="Arial" font-size="10" text-anchor="middle">Docker Image</text>
+  
+  <!-- Deployment box -->
+  <rect x="350" y="140" width="160" height="100" fill="#fff" stroke="#1890ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="430" y="160" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Deployment</text>
+  <text x="430" y="180" font-family="Arial" font-size="10" text-anchor="middle">Controls multiple pod replicas</text>
+  <text x="430" y="195" font-family="Arial" font-size="10" text-anchor="middle">and handles rolling updates</text>
+  
+  <!-- Service box -->
+  <rect x="520" y="140" width="160" height="100" fill="#fff" stroke="#1890ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="600" y="160" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Service</text>
+  <text x="600" y="180" font-family="Arial" font-size="10" text-anchor="middle">Exposes pods via stable</text>
+  <text x="600" y="195" font-family="Arial" font-size="10" text-anchor="middle">network endpoint</text>
+  
+  <!-- Deployment tools -->
+  <rect x="100" y="290" width="600" height="240" fill="#f9f0ff" stroke="#722ed1" stroke-width="2" rx="8" ry="8"/>
+  <text x="150" y="310" font-family="Arial" font-size="16" font-weight="bold">Deployment Tools</text>
+  
+  <!-- kubectl -->
+  <rect x="120" y="320" width="160" height="80" fill="#fff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">kubectl</text>
+  <text x="200" y="370" font-family="Arial" font-size="10" text-anchor="middle">Command-line tool to</text>
+  <text x="200" y="385" font-family="Arial" font-size="10" text-anchor="middle">interact with cluster</text>
+  
+  <!-- Helm -->
+  <rect x="320" y="320" width="160" height="80" fill="#fff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Helm</text>
+  <text x="400" y="370" font-family="Arial" font-size="10" text-anchor="middle">Package manager for</text>
+  <text x="400" y="385" font-family="Arial" font-size="10" text-anchor="middle">Kubernetes applications</text>
+  
+  <!-- values.yaml -->
+  <rect x="320" y="420" width="160" height="80" fill="#fff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="450" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">values.yaml</text>
+  <text x="400" y="470" font-family="Arial" font-size="10" text-anchor="middle">Configuration file for</text>
+  <text x="400" y="485" font-family="Arial" font-size="10" text-anchor="middle">Helm chart settings</text>
+  
+  <!-- Docker -->
+  <rect x="520" y="320" width="160" height="80" fill="#fff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="600" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Docker</text>
+  <text x="600" y="370" font-family="Arial" font-size="10" text-anchor="middle">Container runtime</text>
+  <text x="600" y="385" font-family="Arial" font-size="10" text-anchor="middle">and image builder</text>
+  
+  <!-- Persistent Volume -->
+  <rect x="120" y="420" width="160" height="80" fill="#fff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="200" y="450" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Persistent Volume</text>
+  <text x="200" y="470" font-family="Arial" font-size="10" text-anchor="middle">Storage resource for</text>
+  <text x="200" y="485" font-family="Arial" font-size="10" text-anchor="middle">persisting data</text>
+  
+  <!-- Dockerfile -->
+  <rect x="520" y="420" width="160" height="80" fill="#fff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="600" y="450" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Dockerfile</text>
+  <text x="600" y="470" font-family="Arial" font-size="10" text-anchor="middle">Script to build</text>
+  <text x="600" y="485" font-family="Arial" font-size="10" text-anchor="middle">Docker images</text>
+  
+  <!-- Relationships -->
+  <!-- kubectl to Cluster -->
+  <line x1="150" y1="320" x2="100" y2="200" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="110" y="260" font-family="Arial" font-size="10" fill="#722ed1" transform="rotate(-45, 110, 260)">Manages</text>
+  
+  <!-- Helm to Deployment -->
+  <line x1="350" y1="330" x2="430" y2="240" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="370" y="290" font-family="Arial" font-size="10" fill="#722ed1" transform="rotate(-45, 370, 290)">Deploys</text>
+  
+  <!-- values.yaml to Helm -->
+  <line x1="400" y1="420" x2="400" y2="400" stroke="#722ed1" stroke-width="2"/>
+  <text x="410" y="410" font-family="Arial" font-size="10" fill="#722ed1">Configures</text>
+  
+  <!-- Docker to Container -->
+  <line x1="550" y1="320" x2="270" y2="200" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="240" font-family="Arial" font-size="10" fill="#722ed1" transform="rotate(-20, 400, 240)">Creates</text>
+  
+  <!-- Dockerfile to Docker -->
+  <line x1="600" y1="420" x2="600" y2="400" stroke="#722ed1" stroke-width="2"/>
+  <text x="610" y="410" font-family="Arial" font-size="10" fill="#722ed1">Builds</text>
+  
+  <!-- Deployment to Pods -->
+  <line x1="350" y1="190" x2="280" y2="190" stroke="#1890ff" stroke-width="2"/>
+  <text x="315" y="180" font-family="Arial" font-size="10" fill="#1890ff">Manages</text>
+  
+  <!-- Service to Pods -->
+  <line x1="520" y1="190" x2="430" y2="190" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="470" y="180" font-family="Arial" font-size="10" fill="#1890ff">Exposes</text>
+  
+  <!-- PV to Pod -->
+  <line x1="160" y1="420" x2="160" y2="240" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="170" y="330" font-family="Arial" font-size="10" fill="#722ed1">Attaches to</text>
+</svg>
