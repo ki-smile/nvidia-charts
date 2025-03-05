@@ -487,6 +487,58 @@ To see detailed information about a specific PVC:
 kubectl describe pvc <pvc-name>
 ```
 
+### 10.1 Copying Files to a Persistent Volume Claim (PVC)
+In Kubernetes, **Persistent Volume Claims (PVCs)** provide storage that persists beyond the lifecycle of pods. If you need to copy files from your local machine to a PVC-mounted directory inside a pod, you can use the `kubectl cp` command.
+
+#### Using `kubectl cp`
+The `kubectl cp` command allows you to copy files between your local machine and a running pod.
+
+#### Step 1: Find the Pod Name
+To locate the pod using your PVC, run:
+
+```sh
+kubectl get pods
+```
+
+If you need more details about the storage mounts in a specific pod:
+
+```sh
+kubectl describe pod <pod-name>
+```
+
+#### Step 2: Copy Files to the Pod
+To copy a local file to a pod that has access to the PVC:
+
+```sh
+kubectl cp /path/to/local/file <pod-name>:/path/in/pod
+```
+
+For example, if your pod is named `my-jupyter` and your PVC is mounted at `/workspace`, you can copy a local dataset like this:
+
+```sh
+kubectl cp dataset.csv my-jupyter:/workspace/dataset.csv
+```
+
+To copy an entire directory:
+
+```sh
+kubectl cp /path/to/local/dir <pod-name>:/workspace/
+```
+
+#### Step 3: Verify the File
+After copying, log into the pod to verify:
+
+```sh
+kubectl exec -it <pod-name> -- ls -l /workspace
+```
+
+#### Troubleshooting
+* **Permission Issues:** Ensure the target directory in the pod allows write access.
+* **File Overwrites:** Existing files may be overwritten without warning.
+* **Slow Transfers:** Large files may take time due to Kubernetes network overhead.
+
+This method enables easy file transfers when working with Kubernetes **Persistent Volumes**, improving workflows for data science and research environments.
+
 ## 11. Common Kubernetes Commands
 
 ### Pod Management
