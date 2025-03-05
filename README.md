@@ -454,7 +454,7 @@ kubectl scale deployment my-matlab --replicas=1
 Persistent Volumes (PVs) and Persistent Volume Claims (PVCs) provide storage that persists beyond the lifecycle of pods. This is crucial for saving work in Jupyter Notebooks and MATLAB.
 
 ### Types of Storage Classes
-The SMAILE cluster offers different storage classes, such as:
+A cluster might offer different storage classes, such as:
 - **standard**: General-purpose storage
 - **ssd**: SSD-backed storage for better performance
 - **shared**: Storage accessible from multiple pods simultaneously
