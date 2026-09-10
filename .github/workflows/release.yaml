@@ -24,7 +24,7 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
-          version: v3.4.0
+          version: v4.3.0
       - name: Add Helm repos
         run: |
           helm repo add library-charts https://library-charts.k8s-at-home.com
